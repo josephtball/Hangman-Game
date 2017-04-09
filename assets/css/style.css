@@ -1,17 +1,138 @@
-main {
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
+* {
+	box-sizing: border-box;
 }
-h1, h3, h4 {
+body {
+	color: #fff;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px
+}
+.content {
+	padding-top: 30px;
+	background-color: #333;
+}
+.heading {
+	width: 100%;
+	height: 300px;
+	background-image: url("../images/heroCar.jpg");
+	background-position: left center;
+	background-size: 120% auto;
+}
+.title {
+	float: left;
+	margin-top: 70px;
+	margin-left: 10%;
+}
+.primary {
+	font-family: 'Khula', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 30px;
+	border-bottom: 2px solid #fff;
+}
+.secondary {
+	font-family: 'Khula', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 5px;
+}
+.start {
+	width: 100%;
+	margin-top: 8px;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #eee;
+}
+.box {
+	background-color: #000;
+	opacity: 0.75;
+	padding: 21px 40px 20px;
+}
+main {
+	display: flex;
+	width: 80%;
+	margin: 30px auto 0;
+	background-image: url("../images/concreteBG.png");
+	background-color: #eee;
+	color: #000;
+	border-radius: 8px 8px 0 0;
+}
+.col-left {
+	flex: 1;
+}
+.col-right {
+	flex: 1;
+}
+.stat-box {
+	display: block;
+	margin-top: 30px;
+}
+table {
+	width: 200px;
+	margin-right: 10%;
+	margin-left: auto;
+}
+td {
+	width: 50%;
+	font-size: 16px;
+	padding: 4px;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+.image-box {
+	display: block;
+	margin-top: 30px;
+	margin-right: 10%;
+	text-align: right;
+}
+.game-box {
+	display: inline-block;
+	text-align: center;
+	padding-top: 30px;
+	margin-left: 10%;
+}
+h2, h3, h4 {
 	padding: 10px;
 }
-h1 {
-	font-size: 26px;
-}
 h3 {
-	font-size: 22px;
+	font-size: 18px;
 }
 h4 {
 	font-size: 16px;
+}
+
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 0;
+	background-color: #111;
+}
+/* sticky footer */
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+.wrapper {
+	height: 100%;
+}
+.content {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex: 1;
 }

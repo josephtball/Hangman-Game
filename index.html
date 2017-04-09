@@ -3,33 +3,64 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, intial-scale=1.0">
-		<title>Hangman</title>
+		<title>Automotive Hangman</title>
 		<link rel="stylesheet" href="assets/css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Khula:400,800" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 
 	<body>
-		<nav>
-		</nav>
-
-		<main>
-		<h1>Hangman</h1>
-
-		<button onclick="coreGame();">Start</button>
-
-		<h4>Wins: <span id="wins">0</span></h4>
-		<h4>Losses: <span id="losses">0</span></h4>
-
-
-		<h3>Current Word</h3>
-		<h3><span id="word">_</span></h3>
-
-		<h4>Guesses Remaining: <span id="remainingGuesses">0</span></h4>
-		<h4>Letters Guessed: <span id="letterGuesses"></span></h4>
-		</main>
-
-		<footer>
-		</footer>
+		<div class="wrapper">
+			<div class="content">
+				<header>
+					<div class="heading">
+						<div class="title">
+							<div class="box">
+								<h1 class="primary">Automotive</h1>
+								<h1 class="secondary">Hangman</h1>
+						
+								<button class="start" onclick="coreGame();">Start Game</button>
+							</div>
+						</div>
+					</div>
+				</header>
+		
+				<main>
+					<div class="col-left">
+						<div class="stat-box">
+							<table>
+								<tr>
+									<td class="align-right">Wins:</td>
+									<td class="align-left"><span id="wins">0</span></td>
+								</tr>
+								<tr>
+									<td class="align-right">Losses: </td>
+									<td class="align-left"><span id="losses">0</span></td>
+								</tr>
+							</table>
+						</div>
+	
+						<div class="image-box">
+							<img src="http://placehold.it/200x200">
+						</div>
+					</div>
+	
+					<div class="col-right">
+						<div class="game-box">
+							<h3>Current Word</h3>
+							<h2><span id="word">_</span></h2>
+					
+							<h4>Guesses Remaining: <span id="remainingGuesses">0</span></h4>
+							<h4>Letters Guessed: <span id="letterGuesses"></span></h4>
+						</div>
+					</div>
+				</main>
+		
+				<footer>
+					&copy; Copyright 2017 Joseph Ball
+				</footer>
+			</div>
+		</div>
 
 		<script type="text/javascript" src="assets/javascript/game.js"></script>
 	</body>
