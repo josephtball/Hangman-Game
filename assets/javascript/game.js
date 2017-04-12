@@ -34,6 +34,7 @@ function coreGame() {
 		var test = event.key.toUpperCase();
 		var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
+if (remainingGuesses > 0) {
 		// test if input is a letter
 		if (letters.indexOf(test) >=0 && letterGuesses.indexOf(test) == -1) {
 			userGuess = test;
@@ -68,6 +69,7 @@ function coreGame() {
 			document.querySelector('#wins').innerHTML = wins;
 			setTimeout(won, 50);
 		}
+}
 	} // end get user's guess function
 } // end coreGame function
 
