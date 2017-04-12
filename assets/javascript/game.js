@@ -4,7 +4,7 @@ var losses = 0;
 var word = '';
 var image = '';
 
-function coreGame() {
+function startGame() {
 
 	var letterGuesses = [];
 	var wrongLetters = [];
@@ -99,7 +99,7 @@ if (remainingGuesses > 0) {
 function lose() {
 	var again = confirm('You lose. The word was ' + word.toLowerCase() + '. Do you want to play again?');
 	if (again) {
-		coreGame();
+		startGame();
 	}
 }
 
@@ -107,6 +107,6 @@ function lose() {
 function won() {
 	var again = confirm('You win! The word was ' + word.toLowerCase() + '. Do you want to play again?');
 	if (again) {
-		coreGame();
+		startGame();
 	}
 }
