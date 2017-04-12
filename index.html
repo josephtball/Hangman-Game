@@ -26,25 +26,6 @@
 				</header>
 		
 				<main>
-					<div class="col-left">
-						<div class="stat-box">
-							<table>
-								<tr>
-									<td class="align-right">Wins:</td>
-									<td class="align-left"><span id="wins">0</span></td>
-								</tr>
-								<tr>
-									<td class="align-right">Losses: </td>
-									<td class="align-left"><span id="losses">0</span></td>
-								</tr>
-							</table>
-						</div>
-	
-						<div class="image-box">
-							<img src="http://placehold.it/200x200">
-						</div>
-					</div>
-	
 					<div class="col-right">
 						<div class="game-box">
 							<h3>Current Word</h3>
@@ -52,6 +33,22 @@
 					
 							<h4>Guesses Remaining: <span id="remainingGuesses">0</span></h4>
 							<h4>Letters Guessed: <span id="letterGuesses"></span></h4>
+							<audio id="winAudio">
+								<source src="assets/media/engine-start.wav" type="audio/wav">
+							</audio>
+							<audio id="loseAudio">
+								<source src="assets/media/car-honk.wav" type="audio/wav">
+							</audio>
+						</div>
+					</div>
+
+					<div class="col-left">
+						<div class="stat-box">
+							<h4>Wins: <span id="wins">0</span></h4>
+							<h4>Losses: <span id="losses">0</span></h4>
+						</div>	
+						<div class="image-box">
+							<img id="image" src="assets/images/question-mark.png" width="200px" height="200px">
 						</div>
 					</div>
 				</main>

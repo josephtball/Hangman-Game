@@ -68,29 +68,19 @@ main {
 }
 .col-left {
 	flex: 1;
+	order: 1;
+	text-align: right;
 }
 .col-right {
 	flex: 1;
+	order: 2;
 }
 .stat-box {
-	display: block;
-	margin-top: 30px;
-}
-table {
+	display: inline-block;
 	width: 200px;
+	text-align: center;
+	padding-top: 30px;
 	margin-right: 10%;
-	margin-left: auto;
-}
-td {
-	width: 50%;
-	font-size: 16px;
-	padding: 4px;
-}
-.align-right {
-	text-align: right;
-}
-.align-left {
-	text-align: left;
 }
 .image-box {
 	display: block;
@@ -148,7 +138,8 @@ main {
 	}
 	.stat-box {
 		width: 100%;
-		margin-top: 10px;
+		margin: 10px 0 0;
+		padding-top: 0;
 	}
 	table {
 		margin: 0 auto;
@@ -161,7 +152,7 @@ main {
 	}
 	.game-box {
 		width: 100%;
-		padding-top: 0;
+		padding-top: 10px;
 		margin-left: 0%;
 	}
 }
@@ -191,11 +182,15 @@ main {
 }
 
 @media only screen and (max-width:400px) {
+	.heading {
+		background-position: left top;
+		background-size: auto 120%;
+	}
 	.title {
 		float: none;
 		width: 100%;
 		margin: 0;
-		padding-top: 70px;
+		padding-top: 0;
 	}
 	.box {
 		width: 100%;
